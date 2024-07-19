@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="./home.css" />
+    <title>Keep Note</title>
+</head>
+<body>
+    <header class="header-section">
+        <h1>Keep Note</h1>
+        <div class="search-input">
+            <input type="search" placeholder="Search Notes" />
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </div>
+    </header>
+    <main class="main-page">
+        <aside class="side-bar">
+            <ul class="side-bar-list-container">
+                <li id="noteList" class="side-active"><span style="font-size: 28px;" class="material-symbols-outlined">
+                    description
+                    </span> Notes</li>
+                <li id="archiveList" class=""><span style="font-size: 28px;" class="material-symbols-outlined">
+                archive
+                    </span> Archive</li>
+                <li id="binList" class=""><span style="font-size: 28px;" class="material-symbols-outlined">
+                delete
+                </span> Bin</li>
+            </ul>
+        </aside>
+        <div id="noteContainer" class="note-container">
+            <div class="form">
+                <label for="title">Title</label>
+                <input type="textarea" placeholder="Title" id="title"/>
+                <label for="note">Notes</label>
+                <div class="notes-area">
+                    <textarea placeholder="Notes " maxlength="300px"  id="note"></textarea>
+                    <button id="addNote">New Notes</button>
+                </div>
+            </div>
+            <h1 id="emptyNotes">Empty Notes</h1>
+            <div id="noteCardsContainer">
+                
+            </div>
+        </div>
+        <div id="archiveContainer">
+            <div id="archiveCardsContainer" class="archive-container">
+                
+            </div>
+        </div>
+        <div id="binContainer">
+            <div id="binCardsContainer" class="bin-container">
+
+            </div>
+        </div>
+    </main>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+</html>
