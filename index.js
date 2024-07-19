@@ -1,6 +1,6 @@
 const tokenCheck = localStorage.getItem('x-token')
 if(!tokenCheck){
-    window.location.href = window.location.href = 'http://127.0.0.1:5500/register/register.html'
+    window.location.href = window.location.href = 'https://keepnotesmbs.netlify.app/register/register.html'
 }
 // side bar
 const noteList = document.getElementById('noteList')
