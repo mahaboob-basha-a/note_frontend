@@ -1,6 +1,6 @@
 const tokenCheck = localStorage.getItem('x-token')
         if(tokenCheck){
-            window.location.href = window.location.href = 'http://127.0.0.1:5500/home.html'
+            window.location.href = window.location.href = 'https://keepnotesmbs.netlify.app/home.html'
         }
         // form containers
         const registerPage = document.getElementById('registerForm')
@@ -35,7 +35,7 @@ const tokenCheck = localStorage.getItem('x-token')
                     if(req.ok){
                         console.log(res)
                         localStorage.setItem('x-token',JSON.stringify(res.token))
-                        window.location.href = 'http://127.0.0.1:5500/home.html'
+                        window.location.href = 'https://keepnotesmbs.netlify.app/home.html'
                         regUsername.value = ''
                         regEmail.value = ''
                         regPassInput.value = ''
@@ -58,7 +58,7 @@ const tokenCheck = localStorage.getItem('x-token')
                 const res = await req.json()
                 if(req.ok){
                     localStorage.setItem('x-token',JSON.stringify(res.token))
-                    window.location.href = 'http://127.0.0.1:5500/home.html'
+                    window.location.href = 'https://keepnotesmbs.netlify.app/home.html'
                     lgPassInput.value = ''
                     loginEmail.value = ''
                 }else{
